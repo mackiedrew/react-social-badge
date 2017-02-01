@@ -29,7 +29,7 @@ const simpleIcons = [
 	'yelp',
 	].reduce((a, b) => {
 		a[b] = b
-		return list
+		return a
 	}, {})
 
 

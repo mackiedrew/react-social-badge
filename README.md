@@ -1,6 +1,7 @@
 # React Social Badge
 
-__COMPONENT DESCRIPTION GOES HERE__
+The purpose of this component is to add a cookie-cutter social badge to use as a component
+in 
 
 
 ## Demo & Examples
@@ -30,12 +31,12 @@ npm install react-social-badge --save
 
 ## Usage
 
-__EXPLAIN USAGE HERE__
+You only need to include the 
 
 ```
-var ReactSocialBadge = require('react-social-badge');
+import ReactSocialBadge from 'react-social-badge')
 
-<ReactSocialBadge>Example</ReactSocialBadge>
+<SocialBadge url='http://facebook.com' />
 ```
 
 ### Properties
@@ -55,7 +56,7 @@ To build, watch and serve the examples (which will also watch the component sour
 
 ## License
 
-MIT License (See LICENSE for details.)
+MIT License (See /LICENSE for details.)
 
 Copyright (c) 2017 Mackie Drew.
 
