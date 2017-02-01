@@ -1,15 +1,15 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-var ReactSocialBadge = require('react-social-badge');
+var SocialBadge = require('react-social-badge');
 
 var App = React.createClass({
 	render () {
 		return (
 			<div>
-				<ReactSocialBadge url='http://facebook.com/' />
-				<ReactSocialBadge url='http://github.com/' />
-				<ReactSocialBadge url='http://twitter.com/' />
-				<ReactSocialBadge url='http://linkedin.com/' />
+				<SocialBadge url='http://facebook.com/' />
+				<SocialBadge url='http://github.com/' />
+				<SocialBadge url='http://twitter.com/' />
+				<SocialBadge url='http://linkedin.com/' />
 			</div>
 		);
 	}
