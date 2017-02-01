@@ -1,0 +1,29 @@
+{
+  "name": "react-social-badge",
+  "version": "0.0.0",
+  "description": "React Social Badge",
+  "main": "dist/react-social-badge.min.js",
+  "homepage": "https://github.com/MackieDrew/react-social-badge",
+  "authors": [
+    "Mackie Drew"
+  ],
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "react",
+    "react-component"
+  ],
+  "license": "MIT",
+  "ignore": [
+    ".editorconfig",
+    ".gitignore",
+    "package.json",
+    "src",
+    "node_modules",
+    "example",
+    "test"
+  ]
+}
