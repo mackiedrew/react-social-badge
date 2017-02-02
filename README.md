@@ -1,9 +1,12 @@
 # React Social Badge
 
+Creates an icon in a shape (circle by default) which links to your personal social media channels of choice. Built to be adapted for personal preference.
+
 The purpose of this component is to add a cookie-cutter social badge to use as a component in React apps. It uses a Font Awesome CDN to deliver the font to the page.
 
-
 ## Demo & Examples
+
+![Social Badge Examples](./example/example.png?raw=true "Social badge examples with a few settings tweaks.")
 
 To build the examples locally, run:
 
