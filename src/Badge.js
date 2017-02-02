@@ -11,10 +11,10 @@ const Badge = (props) =>
 
 Badge.propTypes = {
   badgeClassName: React.PropTypes.string,
-	badgeStyle: React.PropTypes.string.isRequired,
+	badgeStyle: React.PropTypes.object.isRequired,
   icon: React.PropTypes.string.isRequired,
   iconClassName: React.PropTypes.string,
-	iconStyle: React.PropTypes.string.isRequired,
+	iconStyle: React.PropTypes.object.isRequired,
   url: React.PropTypes.string.isRequired,
 }
 
