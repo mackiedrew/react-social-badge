@@ -1,11 +1,9 @@
 # React Social Badge
 
-__COMPONENT DESCRIPTION GOES HERE__
+The purpose of this component is to add a cookie-cutter social badge to use as a component in React apps. It uses a Font Awesome CDN to deliver the font to the page.
 
 
 ## Demo & Examples
-
-Live demo: [MackieDrew.github.io/react-social-badge](http://MackieDrew.github.io/react-social-badge/)
 
 To build the examples locally, run:
 
@@ -30,21 +28,61 @@ npm install react-social-badge --save
 
 ## Usage
 
-__EXPLAIN USAGE HERE__
+This is a pretty straight forware component, it just takes a URL to your preffered website's link and produces a link with an associated Font Awesome Icon
 
 ```
-var ReactSocialBadge = require('react-social-badge');
+import SocialBadge from 'react-social-badge'
 
-<ReactSocialBadge>Example</ReactSocialBadge>
+<SocialBadge url='http://github.com/mackiedrew' />
 ```
 
-### Properties
-
-* __DOCUMENT PROPERTIES HERE__
+### Props
+| Prop              | Type       | Description |
+|-------------------|------------|-------------|
+| `url`             | _string_   | The URL to your social media page, this will be the badge link, and be used to determine icon. It's the only required prop. |
+| `size`            | _string_   | You can set it to 'small', 'medium', 'large', or some number of pixels as a string or number "30" but NOT "30px". |
+| `badgeClassName`  | _string_   | Additional classnames to be appended to the classname for the badge div container, not the icon itself, but the circle around it. |
+| `badgeColor`      | _string_   | The background circle's color, can be a word 'red', rgb[a] value 'rgba(255,0,0)' or hex code '#FF0000'. |
+| `badgeStyle`      | _object_   | The inline-style object for the badge, this will be merged with the default. |
+| `iconScale`       | _number_   | How large, relative to _1.0_ the icon will appear in the badge. |
+| `iconClassName`   | _string_   | Additional classnames to be appended to the classname for the icon div container.|
+| `iconColor`       | _string_   | The actual icon color, can be a word 'red', rgb[a] value 'rgba(255,0,0)' or hex code '#FF0000'. |
+| `iconStyle`       | _object_   | The inline-style object for the icon itself, this will be merged with the default. |
 
 ### Notes
-
-__ADDITIONAL USAGE NOTES__
+- You only need to specify the URL, all other components are optional.
+- Styles and classnames are merged in the component with the defaults you will be able to use your own without completely overriding the defaults if you don't want to.
+- If there is a problem with the icon you can set your own preffered font-awesome icon from the list here: http://fontawesome.io/icons/ specified as the icon prop.
+- Any link will work, and you can set the icon manually, but the officially supported social networks are:
+	- Free Code Camp
+	- Google+
+	- Pinterest
+	- Reddit
+	- Snapchat
+	- Steam
+	- Youtube
+	- Stack Exchange
+	- Facebook
+	- Github
+	- Bitbucket
+	- Deviantart
+	- Etsy
+	- Flickr
+	- Instagram
+	- LinkedIn
+	- Meetup
+	- Paypal
+	- Skype
+	- Soundcloud
+	- Spotify
+	- Slack
+	- Twitter
+	- Wordpress
+	- Tumblr
+	- StumbleUpon
+	- Twitch
+	- Vimeo
+	- Yelp
 
 
 ## Development (`src`, `lib` and the build process)
@@ -55,7 +93,7 @@ To build, watch and serve the examples (which will also watch the component sour
 
 ## License
 
-MIT License (See LICENSE for details.)
+MIT License (See /LICENSE for details.)
 
 Copyright (c) 2017 Mackie Drew.
 
