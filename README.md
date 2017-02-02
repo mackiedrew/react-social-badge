@@ -1,12 +1,9 @@
 # React Social Badge
 
-The purpose of this component is to add a cookie-cutter social badge to use as a component
-in 
+The purpose of this component is to add a cookie-cutter social badge to use as a component in React apps. It uses a Font Awesome CDN to deliver the font to the page.
 
 
 ## Demo & Examples
-
-Live demo: [MackieDrew.github.io/react-social-badge](http://MackieDrew.github.io/react-social-badge/)
 
 To build the examples locally, run:
 
@@ -31,30 +28,61 @@ npm install react-social-badge --save
 
 ## Usage
 
-You only need to include 
+This is a pretty straight forware component, it just takes a URL to your preffered website's link and produces a link with an associated Font Awesome Icon
 
 ```
-import SocialBadge from 'react-social-badge')
+import SocialBadge from 'react-social-badge'
 
-<SocialBadge url='http://facebook.com' />
+<SocialBadge url='http://github.com/mackiedrew' />
 ```
 
 ### Props
 | Prop              | Type       | Description |
 |-------------------|------------|-------------|
-| `checked`         | _boolean_  | If `true`, the toggle is checked. If `false`, the toggle is unchecked. Use this if you want to treat the toggle as a controlled component |
-| `defaultChecked`  | _boolean_  | If `true` on initial render, the toggle is checked. If `false` on initial render, the toggle is unchecked. Use this if you want to treat the toggle as an uncontrolled component |
-| `onChange`        | _function_ | Callback function to invoke when the user clicks on the toggle. The function signature should be the following: `function(e) { }`. To get the current checked status from the event, use `e.target.checked`. |
-| `name`            | _string_   | The value of the `name` attribute of the wrapped \<input\> element |
-| `value`           | _string_   | The value of the `value` attribute of the wrapped \<input\> element |
-| `id`              | _string_   | The value of the `id` attribute of the wrapped \<input\> element |
-| `aria-labelledby` | _string_   | The value of the `aria-labelledby` attribute of the wrapped \<input\> element |
-| `aria-label`      | _string_   | The value of the `aria-label` attribute of the wrapped \<input\> element |
-| `disabled`        | _boolean_  | If `true`, the toggle is enabled. If `false`, the toggle is disabled |
+| `url`             | _string_   | The URL to your social media page, this will be the badge link, and be used to determine icon. It's the only required prop. |
+| `size`            | _string_   | You can set it to 'small', 'medium', 'large', or some number of pixels as a string or number "30" but NOT "30px". |
+| `badgeClassName`  | _string_   | Additional classnames to be appended to the classname for the badge div container, not the icon itself, but the circle around it. |
+| `badgeColor`      | _string_   | The background circle's color, can be a word 'red', rgb[a] value 'rgba(255,0,0)' or hex code '#FF0000'. |
+| `badgeStyle`      | _object_   | The inline-style object for the badge, this will be merged with the default. |
+| `iconScale`       | _number_   | How large, relative to _1.0_ the icon will appear in the badge. |
+| `iconClassName`   | _string_   | Additional classnames to be appended to the classname for the icon div container.|
+| `iconColor`       | _string_   | The actual icon color, can be a word 'red', rgb[a] value 'rgba(255,0,0)' or hex code '#FF0000'. |
+| `iconStyle`       | _object_   | The inline-style object for the icon itself, this will be merged with the default. |
 
 ### Notes
-
-__ADDITIONAL USAGE NOTES__
+- You only need to specify the URL, all other components are optional.
+- Styles and classnames are merged in the component with the defaults you will be able to use your own without completely overriding the defaults if you don't want to.
+- If there is a problem with the icon you can set your own preffered font-awesome icon from the list here: http://fontawesome.io/icons/ specified as the icon prop.
+- Any link will work, and you can set the icon manually, but the officially supported social networks are:
+	- Free Code Camp
+	- Google+
+	- Pinterest
+	- Reddit
+	- Snapchat
+	- Steam
+	- Youtube
+	- Stack Exchange
+	- Facebook
+	- Github
+	- Bitbucket
+	- Deviantart
+	- Etsy
+	- Flickr
+	- Instagram
+	- LinkedIn
+	- Meetup
+	- Paypal
+	- Skype
+	- Soundcloud
+	- Spotify
+	- Slack
+	- Twitter
+	- Wordpress
+	- Tumblr
+	- StumbleUpon
+	- Twitch
+	- Vimeo
+	- Yelp
 
 
 ## Development (`src`, `lib` and the build process)
