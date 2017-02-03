@@ -6,7 +6,7 @@ The purpose of this component is to add a cookie-cutter social badge to use as a
 
 ## Demo & Examples
 
-Check out the [Live Demo](https://mackiedrew.github.io/react-social-badge/).
+Check out the [live demo](https://mackiedrew.github.io/react-social-badge/)!
 
 ![Social Badge Examples](./example/example.png?raw=true "Social badge examples with a few settings tweaks.")
 
