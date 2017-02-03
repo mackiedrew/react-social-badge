@@ -4,7 +4,11 @@
   "description": "React component for simply adding a circular social media icon with link.",
   "keywords": [
     "react",
-    "react-component"
+    "react-component",
+    "badge",
+    "social",
+    "button",
+    "social media"
   ],
   "main": "lib/ReactSocialBadge.js",
   "author": "Mackie Drew",
