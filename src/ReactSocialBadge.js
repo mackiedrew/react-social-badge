@@ -103,8 +103,8 @@ const ReactSocialBadge = (props) => {
 	// Add default styling and merge badgeStyle Prop
 	const badgeStyle = {
 		display: 'inline-block',
-		width: `${size}px`,
-		height: `${size}px`,
+		width: `${size*2}px`,
+		height: `${size*2}px`,
 		borderRadius: '50%',
 		margin: '2px',
 		backgroundColor: props.badgeColor || 'rgb(187, 0, 0)',
