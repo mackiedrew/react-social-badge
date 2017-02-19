@@ -25,7 +25,7 @@ var App = React.createClass({
 						badgeColor='#3b5998'
 						url='http://facebook.com/mackiedrew' />
 					<SocialBadge badgeColor='#00aced' size='large' url='http://twitter.com/mackiedrew' />
-					<SocialBadge iconScale='1.3' badgeColor='rgba(0,0,0,0)' iconColor='rgb(187, 0, 0)' size='large' url='http://youtube.com/' />
+					<SocialBadge iconScale={1.3} badgeColor='rgba(0,0,0,0)' iconColor='rgb(187, 0, 0)' size='large' url='http://youtube.com/' />
 				</div>
 			</div>
 		)
