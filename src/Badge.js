@@ -1,21 +1,30 @@
-import React from 'react'
+import React from "react";
+import PropTypes from "prop-types";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Badge = (props) =>
-  <div className={props.badgeClassName} style={props.badgeStyle}>
-      <a
-        href={props.url}
-        className={`fa fa-${props.icon} ${props.iconClassName}`}
-        style={props.iconStyle}>
-      </a>
-  </div>
+const Badge = (props) => (
+	<>
+		<div className={props.badgeClassName} style={props.badgeStyle}>
+			<a href={props.url}>
+				<FontAwesomeIcon
+					className={props.iconClassName}
+					icon={["fab", props.icon]}
+					style={props.iconStyle}
+					fixedWith
+					transform="shrink-1 down-5"
+				/>
+			</a>
+		</div>
+	</>
+);
 
 Badge.propTypes = {
-  badgeClassName: React.PropTypes.string,
-	badgeStyle: React.PropTypes.object.isRequired,
-  icon: React.PropTypes.string.isRequired,
-  iconClassName: React.PropTypes.string,
-	iconStyle: React.PropTypes.object.isRequired,
-  url: React.PropTypes.string.isRequired,
-}
+	badgeClassName: PropTypes.string,
+	badgeStyle: PropTypes.object.isRequired,
+	icon: PropTypes.string.isRequired,
+	iconClassName: PropTypes.string,
+	iconStyle: PropTypes.object.isRequired,
+	url: PropTypes.string.isRequired,
+};
 
-export default Badge
+export default Badge;
